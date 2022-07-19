@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ListView
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:background="#707070"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="@android:color/transparent"
-        android:id="@+id/listviewSong"
-        android:padding="@dimen/_5sdp"
-        android:dividerHeight="@dimen/_10sdp"/>
+        tools:context=".MainActivity">
 
-</RelativeLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:id="@+id/listviewSong"
+            android:padding="@dimen/_5sdp"
+            android:dividerHeight="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+</layout>
